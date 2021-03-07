@@ -134,97 +134,184 @@ header nav ul li a:hover {
   padding-right: 5px;
 }
 
-.Work p {
-  border: solid blue;
-  display: flex;
-  flex-wrap: wrap;
+.WorkLinks-Container {
+  width: 70%;
+  margin-top: 20px;
 }
 
-.WorkLinks {
-    border: solid purple;
-    width: 70%;
-    margin-top: 15px;
+.WorkLinks-Main {
+  border: solid purple;
+  width: 100%;
+  height: 600px;
 }
 
 /* Horiseon - Work */
 .Horiseon {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 #HoriseonImage {
   background-image: url(../images/Horiseon.PNG);
+  background-repeat: no-repeat;
   display: flex;
-  margin: 10px auto;
+  padding-top: 15px 30px;
   height: 500px;
-  width: 500px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 /* End Horiseon - Work */
 
+.WorkLinks-Secondary {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #000;
+  float: left;
+  width: 100%;
+  justify-content: center;
+}
+
+.WorkLinks-SecondaryContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* Sarter - WORK */
 .Sarter {
-    padding-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 #SarterImage {
   background-image: url(../images/Sarter.PNG);
+  background-repeat: no-repeat;
   display: flex;
   margin: 0 auto;
   height: 250px;
-  width: 250px;
-
+  width: 300px;
 }
 /* End Sarter - WORK */
+/* Start RunBuddy WORK */
+.RunBuddy {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#RunBuddyImage {
+  background-image: url(../images/RunBuddy.PNG);
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+/* End RunBuddy Work */
 
+.WorkLinks-Third {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #000;
+  float: left;
+  width: 100%;
+  justify-content: center;
+}
+
+.WorkLinks-ThirdContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* StartInventoryModule WORK */
+.InventoryModule {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#InventoryModuleImage {
+  background-image: url(../images/RunBuddy.PNG);
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+/* End InventoryModule Work */
+
+/* Start TBD WORK */
+.InventoryModule {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#InventoryModuleImage {
+  background-image: url(../images/RunBuddy.PNG);
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+/* End TBD Work */
+.TBD {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#TBDImage {
+  background-image: url(../images/RunBuddy.PNG);
+  background-repeat: no-repeat;
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
 /* End of Work */
 
 /* Start of ContactMe */
-.ContactMe{
-    display: flex;
-    flex-wrap: wrap;
-    border: solid #000;
-
+.ContactMe {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #000;
 }
 
 .ContactMe h2 {
-    border: solid red;
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: right;
-    border-right: black solid;
+  border: solid red;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: right;
+  border-right: black solid;
 }
 
 .ContactMe h2 span {
-    border: solid green;
-    text-align: right;
-    padding-right: 5px;
-  }
+  border: solid green;
+  text-align: right;
+  padding-right: 5px;
+}
 
 .ContactMe div {
-    margin: 7px 0;
+  margin: 7px 0;
 }
 
 .ContactMe ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
 }
 
-.ContactMe ul li{
-    margin: 7px;
-    color: black;
+.ContactMe ul li {
+  margin: 7px;
+  color: black;
 }
 
 .ContactMe ul li a {
-    color: black;
-    padding: 10px 5px;
-    font-weight: lighter;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: var(--primary-color);
-    text-decoration-thickness: 2px;
+  color: black;
+  padding: 10px 5px;
+  font-weight: lighter;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
 }
