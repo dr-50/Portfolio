@@ -1,7 +1,16 @@
 :root {
-  --primary-color: hsl(182, 45%, 70%);
+  --primary-color: hsl(39, 68%, 60%);
+  /* --secondary-color: rgb(22, 22, 22); */
+  --secondary-color: rgb(252, 4, 4);
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-color: cornsilk;
+}
 /* Start of header */
 header {
   background-color: rgba(0, 0, 0, 0.7);
@@ -19,7 +28,7 @@ header h1 {
   padding-left: 30px;
   font-size: 36px;
   background-color: var(--primary-color);
-  color: rgba(0, 0, 0, 0.7);
+  color: var(--secondary-color);
   margin: 0;
 }
 
@@ -67,11 +76,12 @@ header nav ul li a:hover {
 .hero h2 {
   margin-bottom: 10px;
   margin-right: 10px;
-  padding-left: auto;
-  padding-right: 10px;
+  padding-left: 0px;
+  padding-right: 100px;
   position: relative;
   text-align: center;
   background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .hero img {
@@ -85,28 +95,39 @@ header nav ul li a:hover {
 .AboutMe {
   display: flex;
   flex-wrap: wrap;
-  border: solid #000;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .AboutMe h2 {
-  border: solid red;
   width: 20%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: right;
   border-right: black solid;
+  color: var(--secondary-color);
 }
 
 .AboutMe h2 span {
-  border: solid green;
   text-align: right;
 }
 
-.AboutMe p {
-  border: solid blue;
+.AboutMe article {
+  padding-left: 10px;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
+  height: auto;
+  flex: 1;
+  color: var(--secondary-color);
+}
+.AboutMe p {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+  height: auto;
 }
 
 /* End of About Me */
@@ -115,29 +136,27 @@ header nav ul li a:hover {
 .Work {
   display: flex;
   flex-wrap: wrap;
-  border: solid #000;
+  margin-bottom: 20px;
+  flex: 1;
 }
 
 .Work h2 {
-  border: solid red;
   width: 20%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: right;
   border-right: black solid;
+  color: var(--secondary-color);
 }
 
 .Work h2 span {
-  border: solid green;
   text-align: right;
   padding-right: 5px;
 }
 
 .WorkLinks-Container {
-  /* width: 70%; */
   margin-top: 20px;
-  background-color: brown;
 }
 
 .WorkLinks-Desc {
@@ -146,7 +165,6 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   flex-direction: column-reverse;
   align-items: flex-end;
-  position: relative;
 }
 
 .WorkLinks-Desc-Container {
@@ -169,7 +187,6 @@ header nav ul li a:hover {
 
 /* Horiseon - Work */
 .WorkLinks-Main {
-  border: solid purple;
   width: 100%;
   height: 600px;
 }
@@ -202,7 +219,6 @@ header nav ul li a:hover {
 .WorkLinks-Secondary {
   display: flex;
   flex-wrap: wrap;
-  border: solid #000;
   float: left;
   width: 100%;
   justify-content: center;
@@ -246,10 +262,10 @@ header nav ul li a:hover {
 .WorkLinks-Third {
   display: flex;
   flex-wrap: wrap;
-  border: solid #000;
   float: left;
   width: 100%;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .WorkLinks-ThirdContainer {
@@ -258,7 +274,6 @@ header nav ul li a:hover {
 }
 /* StartInventoryModule WORK */
 .InventoryModule {
-  padding-left: 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -281,6 +296,7 @@ header nav ul li a:hover {
 #InventoryModuleImage {
   background-image: url(../images/InventoryModule.PNG);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   margin: 0 auto;
   height: 250px;
@@ -293,12 +309,14 @@ header nav ul li a:hover {
   flex-wrap: wrap;
 }
 #TBDImage {
-  background-image: url(../images/RunBuddy.PNG);
+  background-image: url(../images/download.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   margin: 0 auto;
   height: 250px;
   width: 300px;
+
 }
 /* End of Work */
 
@@ -306,48 +324,59 @@ header nav ul li a:hover {
 .ContactMe {
   display: flex;
   flex-wrap: wrap;
-  border: solid #000;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .ContactMe h2 {
-  border: solid red;
   width: 20%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
-  justify-content: right;
+  justify-content: space-between;
   border-right: black solid;
+  color: var(--secondary-color);
 }
 
 .ContactMe h2 span {
-  border: solid green;
   text-align: right;
   padding-right: 5px;
 }
 
-.ContactMe div {
-  margin: 7px 0;
+.ContactMe-Info {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
 }
 
 .ContactMe ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
-  align-items: center;
 }
 
 .ContactMe ul li {
   margin: 7px;
-  color: black;
 }
 
 .ContactMe ul li a {
-  color: black;
+  color: var(--secondary-color);
   padding: 10px 5px;
   font-weight: lighter;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--primary-color);
   text-decoration-thickness: 2px;
+}
+
+/* MEDIA QUERY - 980px */
+@media screen and (max-width: 980px) {
+  .AboutMe p {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+  }
 }
