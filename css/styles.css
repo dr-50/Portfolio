@@ -2,6 +2,7 @@
   --primary-color: hsl(39, 68%, 60%);
   /* --secondary-color: rgb(22, 22, 22); */
   --secondary-color: rgb(252, 4, 4);
+  --borderaccent-color: rgb(128, 74, 216);
 }
 * {
   margin: 0;
@@ -101,6 +102,7 @@ header nav ul li a:hover {
 
 .AboutMe h2 {
   width: 20%;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -133,6 +135,8 @@ header nav ul li a:hover {
 /* End of About Me */
 
 /* Start of Work */
+/* Global Work */
+
 .Work {
   display: flex;
   flex-wrap: wrap;
@@ -140,8 +144,44 @@ header nav ul li a:hover {
   flex: 1;
 }
 
+.WorkLinks-Desc-Container {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.WorkLinks-Desc {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+
+.WorkLinks-Desc h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.WorkLinks-Desc h4 {
+  font-size: 10px;
+}
+
+.WorkLinks-Container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* End Global Work */
+
+/* Work Title */
 .Work h2 {
   width: 20%;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -154,36 +194,7 @@ header nav ul li a:hover {
   text-align: right;
   padding-right: 5px;
 }
-
-.WorkLinks-Container {
-  margin-top: 20px;
-}
-
-.WorkLinks-Desc {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  align-items: flex-end;
-}
-
-.WorkLinks-Desc-Container {
-  margin: 0;
-  padding: 0;
-  background-color: var(--primary-color);
-  position: absolute;
-  margin-bottom: 5px;
-  width: 150px;
-}
-
-.WorkLinks-Desc h3 {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.WorkLinks-Desc h4 {
-  font-size: 10px;
-}
+/* End Work Title */
 
 /* Horiseon - Work */
 .WorkLinks-Main {
@@ -208,6 +219,8 @@ header nav ul li a:hover {
 #HoriseonImage {
   background-image: url(../images/Horiseon.PNG);
   background-repeat: no-repeat;
+  border-radius: 10px;
+  border: 3px solid var(--borderaccent-color);
   display: flex;
   padding-top: 15px 30px;
   height: 500px;
@@ -222,11 +235,14 @@ header nav ul li a:hover {
   float: left;
   width: 100%;
   justify-content: center;
+  margin:5px;
 }
 
 .WorkLinks-SecondaryContainer {
   display: flex;
   flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Sarter - WORK */
@@ -237,6 +253,8 @@ header nav ul li a:hover {
 #SarterImage {
   background-image: url(../images/Sarter.PNG);
   background-repeat: no-repeat;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
   display: flex;
   margin: 0 auto;
   height: 250px;
@@ -252,6 +270,8 @@ header nav ul li a:hover {
 #RunBuddyImage {
   background-image: url(../images/RunBuddy.PNG);
   background-repeat: no-repeat;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
   display: flex;
   margin: 0 auto;
   height: 250px;
@@ -259,50 +279,25 @@ header nav ul li a:hover {
 }
 /* End RunBuddy Work */
 
-.WorkLinks-Third {
-  display: flex;
-  flex-wrap: wrap;
-  float: left;
-  width: 100%;
-  justify-content: center;
-  margin-top: 20px;
-}
 
-.WorkLinks-ThirdContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
 /* StartInventoryModule WORK */
 .InventoryModule {
   display: flex;
   flex-wrap: wrap;
 }
 #InventoryModuleImage {
-  background-image: url(../images/RunBuddy.PNG);
-  background-repeat: no-repeat;
-  display: flex;
-  margin: 0 auto;
-  height: 50px;
-  width: 300px;
-}
-/* End InventoryModule Work */
-
-/* Start TBD WORK */
-.InventoryModule {
-  padding-left: 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
-#InventoryModuleImage {
   background-image: url(../images/InventoryModule.PNG);
   background-repeat: no-repeat;
-  background-size: cover;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
   display: flex;
   margin: 0 auto;
   height: 250px;
   width: 300px;
 }
-/* End TBD Work */
+/* End InventoryModule Work */
+
+/* Start TBD WORK */
 .TBD {
   padding-left: 10px;
   display: flex;
@@ -312,12 +307,15 @@ header nav ul li a:hover {
   background-image: url(../images/download.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
   display: flex;
   margin: 0 auto;
   height: 250px;
   width: 300px;
-
 }
+/* End TBD Work */
+
 /* End of Work */
 
 /* Start of ContactMe */
@@ -330,6 +328,7 @@ header nav ul li a:hover {
 
 .ContactMe h2 {
   width: 20%;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row-reverse;
@@ -373,10 +372,95 @@ header nav ul li a:hover {
 
 /* MEDIA QUERY - 980px */
 @media screen and (max-width: 980px) {
+  .header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  header h1 {
+    width: 100%vw;
+  }
+
   .AboutMe p {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex: 100%;
+  }
+
+  #HoriseonImage {
+    width: 400px;
+  }
+
+  #SarterImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+  #RunBuddyImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+  #InventoryModuleImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+  #TBDImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+
+  footer {
+    padding-left: 20px;
+  }
+
+  .WorkLinks-Desc {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  
+  #HoriseonImage {
+    width: 300px;
+  }
+
+  #SarterImage {
+    width: 150px;
+  }
+  #RunBuddyImage {
+    width: 150px;
+  }
+  #InventoryModuleImage {
+    width: 150px;
+  }
+  #TBDImage {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width:575px){
+
+  #HoriseonImage {
+    width: 200px;
+  }
+
+  #SarterImage {
+    width: 100px;
+  }
+  #RunBuddyImage {
+    width: 100px;
+  }
+  #InventoryModuleImage {
+    width: 100px;
+  }
+  #TBDImage {
+    width: 100px;
+  }
+
+  .WorkLinks-Desc-Container{
+    width: 100px;
   }
 }
