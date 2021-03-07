@@ -1,0 +1,206 @@
+:root {
+  --primary-color: hsl(182, 45%, 70%);
+}
+
+/* Start of header */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+header h1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  font-size: 36px;
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+header nav ul li a {
+  padding: 10px 5px;
+  font-weight: lighter;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+}
+
+header nav ul li a:hover {
+  text-decoration-line: none;
+}
+/* End of header */
+
+/* Start of subtitle */
+.hero {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: auto;
+  padding-right: 10px;
+  position: relative;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/* End of subtitle */
+
+/* Start of About Me */
+.AboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #000;
+}
+
+.AboutMe h2 {
+  border: solid red;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: right;
+  border-right: black solid;
+}
+
+.AboutMe h2 span {
+  border: solid green;
+  text-align: right;
+}
+
+.AboutMe p {
+  border: solid blue;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* End of About Me */
+
+/* Start of Work */
+.Work {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid #000;
+}
+
+.Work h2 {
+  border: solid red;
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: right;
+  border-right: black solid;
+}
+
+.Work h2 span {
+  border: solid green;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.Work p {
+  border: solid blue;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Horiseon - Work */
+.Horiseon {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#HoriseonImage {
+  background-image: url(../images/Horiseon.PNG);
+  display: flex;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+}
+/* End of Work */
+
+/* Start of ContactMe */
+.ContactMe{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid #000;
+
+}
+
+.ContactMe h2 {
+    border: solid red;
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: right;
+    border-right: black solid;
+}
+
+.ContactMe h2 span {
+    border: solid green;
+    text-align: right;
+    padding-right: 5px;
+  }
+
+.ContactMe div {
+    margin: 7px 0;
+}
+
+.ContactMe ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+.ContactMe ul li{
+    margin: 7px;
+    color: black;
+}
+
+.ContactMe ul li a {
+    color: black;
+    padding: 10px 5px;
+    font-weight: lighter;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--primary-color);
+    text-decoration-thickness: 2px;
+}
