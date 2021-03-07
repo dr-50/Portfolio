@@ -135,20 +135,58 @@ header nav ul li a:hover {
 }
 
 .WorkLinks-Container {
-  width: 70%;
+  /* width: 70%; */
   margin-top: 20px;
+  background-color: brown;
 }
 
+.WorkLinks-Desc {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  position: relative;
+}
+
+.WorkLinks-Desc-Container {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.WorkLinks-Desc h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.WorkLinks-Desc h4 {
+  font-size: 10px;
+}
+
+/* Horiseon - Work */
 .WorkLinks-Main {
   border: solid purple;
   width: 100%;
   height: 600px;
 }
 
-/* Horiseon - Work */
 .Horiseon {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.WorkLinks-Main-Container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 #HoriseonImage {
   background-image: url(../images/Horiseon.PNG);
@@ -157,8 +195,6 @@ header nav ul li a:hover {
   padding-top: 15px 30px;
   height: 500px;
   width: 600px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 50px;
 }
 /* End Horiseon - Work */
@@ -231,7 +267,7 @@ header nav ul li a:hover {
   background-repeat: no-repeat;
   display: flex;
   margin: 0 auto;
-  height: 250px;
+  height: 50px;
   width: 300px;
 }
 /* End InventoryModule Work */
@@ -243,7 +279,7 @@ header nav ul li a:hover {
   flex-wrap: wrap;
 }
 #InventoryModuleImage {
-  background-image: url(../images/RunBuddy.PNG);
+  background-image: url(../images/InventoryModule.PNG);
   background-repeat: no-repeat;
   display: flex;
   margin: 0 auto;
