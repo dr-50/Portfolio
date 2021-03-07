@@ -139,19 +139,43 @@ header nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
 }
+
+.WorkLinks {
+    border: solid purple;
+    width: 70%;
+    margin-top: 15px;
+}
+
 /* Horiseon - Work */
 .Horiseon {
-    padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
 }
 #HoriseonImage {
   background-image: url(../images/Horiseon.PNG);
   display: flex;
-  margin: 0 auto;
+  margin: 10px auto;
   height: 500px;
   width: 500px;
 }
+/* End Horiseon - Work */
+
+/* Sarter - WORK */
+.Sarter {
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#SarterImage {
+  background-image: url(../images/Sarter.PNG);
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 250px;
+
+}
+/* End Sarter - WORK */
+
 /* End of Work */
 
 /* Start of ContactMe */
