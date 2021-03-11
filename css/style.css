@@ -289,6 +289,7 @@ header nav ul li a:hover {
 @media screen and (max-width: 684px){
   .Work-childMain{
     width: 400px;
+    
   }
   .Work-childSecondary{
     margin-right: auto;
@@ -298,6 +299,18 @@ header nav ul li a:hover {
   .ContactMe-child {
     margin-left: 0px;
   }
+  .ContactMe-child {
+    padding-right: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+  }
+  .ContactMe ul li {
+    
+    display: inline;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 584px){
@@ -306,38 +319,55 @@ header nav ul li a:hover {
     margin-left: auto;
     margin-bottom: 150px
   }
-
-}
+  .ContactMe {
+    display: inline;
+    flex-wrap: none;
+  }
+  .ContactMe-child {
+    margin: 0 auto;
+  }
+  .ContactMe-child ul {
+    margin:0 auto;
+    display: inline;
+    flex-wrap: none;
+    /* margin-left: 0; */
+  }
+} 
 
 @media screen and (max-width:435px){
 
   header{
     height: 150px;
   }
+
+  .Work-childMain {
+    margin-left: -125px;
+  }
+
   .Work-childSecondary{
     margin-bottom: 500px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 150px;
+    padding-left: 50px;
   }
 
   .ContactMe {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: baseline;
     align-content: space-between;
     margin: 0;
   }
   .ContactMe-Child {
     padding-right: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: center;
   }
   .ContactMe ul li {
     
-    display: flex;
-    flex-wrap: wrap;
+    display: inline;
+    /* flex-wrap: wrap; */
     justify-content: center;
   }
 
