@@ -149,7 +149,7 @@ header nav ul li a:hover {
 .Work #SarterImage,
 .Work #RunBuddyImage,
 .Work #InventoryModuleImage,
-.Work #TBDImage {
+.Work #SongAndSpiritImage {
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -162,14 +162,14 @@ header nav ul li a:hover {
 .Work #SarterImage:hover,
 .Work #RunBuddyImage:hover,
 .Work #InventoryModuleImage:hover,
-.Work #TBDImage:hover {
+.Work #SongAndSpiritImage:hover {
   -webkit-filter: grayscale(50%);
   filter: grayscale(50%);
   border-color: red;
 }
 
-.Work #HoriseonImage {
-  background-image: url(../images/Horiseon.PNG);
+.Work #SongAndSpiritImage {
+  background-image: url(../images/SongsAndSpirits.PNG);
   height: 410px;
   width: 300px;
   margin-left: 175px;
@@ -219,8 +219,8 @@ header nav ul li a:hover {
   width: 200px;
 }
 
-.Work #TBDImage {
-  background-image: url(../images/ComingSoon.png);
+.Work #HoriseonImage {
+  background-image: url(../images/Horiseon.PNG);
   height: 200px;
   width: 200px;
 }
