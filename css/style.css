@@ -1,0 +1,374 @@
+:root {
+  --primary-color: hsl(39, 68%, 60%);
+  --secondary-color: rgb(18, 49, 107);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cornsilk;
+}
+
+/* Start of Header */
+header {
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+header h1 {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-right: 20px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 5px;
+  color: var(--primary-color);
+  font-weight: lighter;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+header nav ul li a:hover {
+  text-decoration-line: none;
+}
+
+/* End of Header */
+
+.hero {
+  height: 150px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 0px;
+  padding-right: 100px;
+  position: absolute;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.hero #HeroBackground {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero #PersonalPhoto {
+  position: absolute;
+  height: 120px;
+  width: 100px;
+  top: 15px;
+  left: 40px;
+}
+
+.AboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.AboutMe h2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  background-color: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+.AboutMe article {
+  margin-left: 50px;
+  width: 1000px;
+}
+
+.Work {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+  justify-content: initial;
+  margin-bottom: 40px;
+}
+
+.Work h2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  background-color: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+.Work-childMain,
+.Work-childSecondary {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 410px;
+}
+
+.Work-childMain {
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Work-childSecondary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Work #HoriseonImage,
+.Work #SarterImage,
+.Work #RunBuddyImage,
+.Work #InventoryModuleImage,
+.Work #SongAndSpiritImage {
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid var(--primary-color);
+}
+
+.Work #HoriseonImage:hover,
+.Work #SarterImage:hover,
+.Work #RunBuddyImage:hover,
+.Work #InventoryModuleImage:hover,
+.Work #SongAndSpiritImage:hover {
+  -webkit-filter: grayscale(50%);
+  filter: grayscale(50%);
+  border-color: red;
+}
+
+.Work #SongAndSpiritImage {
+  background-image: url(../images/SongsAndSpirits.PNG);
+  height: 410px;
+  width: 300px;
+  margin-left: 175px;
+}
+
+.WorkLinks-Desc-Container {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+.WorkLinks-Desc {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.WorkLinks-Desc h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.WorkLinks-Desc h4 {
+  font-size: 10px;
+}
+
+.Work #SarterImage {
+  background-image: url(../images/Sarter.PNG);
+  height: 200px;
+  width: 200px;
+}
+
+.Work #RunBuddyImage {
+  background-image: url(../images/RunBuddy.PNG);
+  height: 200px;
+  width: 200px;
+}
+
+.Work #InventoryModuleImage {
+  background-image: url(../images/InventoryModule.PNG);
+  height: 200px;
+  width: 200px;
+}
+
+.Work #HoriseonImage {
+  background-image: url(../images/Horiseon.PNG);
+  height: 200px;
+  width: 200px;
+}
+
+.ContactMe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ContactMe h2 {
+  width: 150px;
+  background-color: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+.ContactMe ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 150px;
+}
+
+.ContactMe ul li a {
+  color: var(--secondary-color);
+  padding: 10px 15px;
+  font-weight: lighter;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--secondary-color);
+  text-decoration-thickness: 2px;
+}
+
+.ContactMe ul li a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1209px) {
+  .Work-childSecondary {
+    margin-left: 350px;
+  }
+}
+
+@media screen and (max-width: 757px) {
+  .Work-childMain {
+    /* margin-right: 40px; */
+    width: 500px;
+    height: 300px;
+    margin-left: -25px;
+  }
+
+  .Work #HoriseonImage{
+    width: 200px;
+    height: 300px;
+  }
+
+  .Work-childSecondary {
+    /* margin-bottom: 550px; */
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 684px){
+  .Work-childMain{
+    width: 400px;
+    
+  }
+  .Work-childSecondary{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .ContactMe-child {
+    margin-left: 0px;
+  }
+  .ContactMe-child {
+    padding-right: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+  }
+  .ContactMe ul li {
+    
+    display: inline;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 584px){
+  .Work-childSecondary{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 150px
+  }
+  .ContactMe {
+    display: inline;
+    flex-wrap: none;
+  }
+  .ContactMe-child {
+    margin: 0 auto;
+  }
+  .ContactMe-child ul {
+    margin:0 auto;
+    display: inline;
+    flex-wrap: none;
+    /* margin-left: 0; */
+  }
+} 
+
+@media screen and (max-width:435px){
+
+  header{
+    height: 150px;
+  }
+
+  .Work-childMain {
+    margin-left: -125px;
+  }
+
+  .Work-childSecondary{
+    margin-bottom: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+  }
+
+  .ContactMe {
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: baseline;
+    align-content: space-between;
+    margin: 0;
+  }
+  .ContactMe-Child {
+    padding-right: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    justify-content: center;
+  }
+  .ContactMe ul li {
+    
+    display: inline;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+  }
+
+ }
