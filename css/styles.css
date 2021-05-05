@@ -1,0 +1,502 @@
+:root {
+  --primary-color: hsl(39, 68%, 60%);
+  /* --secondary-color: rgb(22, 22, 22); */
+  --secondary-color: rgb(252, 4, 4);
+  --borderaccent-color: rgb(128, 74, 216);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: cornsilk;
+}
+/* Start of header */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+header h1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  font-size: 36px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+}
+
+header nav ul li a {
+  padding: 10px 5px;
+  font-weight: lighter;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+}
+
+header nav ul li a:hover {
+  text-decoration-line: none;
+}
+/* End of header */
+
+/* Start of subtitle */
+.hero {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  padding-left: 0px;
+  padding-right: 100px;
+  position: relative;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/* End of subtitle */
+
+/* Start of About Me */
+.AboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.AboutMe h2 {
+  width: 200px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: right;
+  border-right: black solid;
+  color: var(--secondary-color);
+}
+
+.AboutMe h2 span {
+  text-align: right;
+}
+
+.AboutMe article {
+  padding-left: 10px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  height: auto;
+  flex: 1;
+  color: var(--secondary-color);
+}
+.AboutMe p {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 100%;
+  height: auto;
+}
+
+/* End of About Me */
+
+/* Start of Work */
+/* Global Work */
+
+.Work {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.WorkLinks-Desc-Container {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+  position: absolute;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.WorkLinks-Desc {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+
+.WorkLinks-Desc h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.WorkLinks-Desc h4 {
+  font-size: 10px;
+}
+
+.WorkLinks-Container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+/* End Global Work */
+
+/* Work Title */
+.Work h2 {
+  width: 200px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: right;
+  border-right: black solid;
+  color: var(--secondary-color);
+}
+
+.Work h2 span {
+  text-align: right;
+  padding-right: 5px;
+}
+/* End Work Title */
+
+/* Horiseon - Work */
+.WorkLinks-Main {
+  padding-left: 10px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  height: auto;
+  flex: 1;
+}
+
+.Horiseon {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.WorkLinks-Main-Container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+#HoriseonImage {
+  background-image: url(../images/Horiseon.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 3px solid var(--borderaccent-color);
+  display: flex;
+  padding-top: 15px 30px;
+  height: 500px;
+  width: 600px; 
+  margin-top: 50px;
+}
+/* End Horiseon - Work */
+
+.WorkLinks-Secondary {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 100%;
+  justify-content: center;
+  margin:5px;
+}
+
+.WorkLinks-SecondaryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: cadetblue;
+}
+
+/* Sarter - WORK */
+.Sarter {
+  display: flex;
+  flex-wrap: wrap;
+}
+#SarterImage {
+  background-image: url(../images/Sarter.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+/* End Sarter - WORK */
+/* Start RunBuddy WORK */
+.RunBuddy {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#RunBuddyImage {
+  background-image: url(../images/RunBuddy.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+/* End RunBuddy Work */
+
+
+/* StartInventoryModule WORK */
+.InventoryModule {
+  display: flex;
+  flex-wrap: wrap;
+}
+#InventoryModuleImage {
+  background-image: url(../images/InventoryModule.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+/* End InventoryModule Work */
+
+/* Start TBD WORK */
+.TBD {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#TBDImage {
+  background-image: url(../images/download.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  border: 3px solid var(--borderaccent-color);
+  display: flex;
+  margin: 0 auto;
+  height: 250px;
+  width: 300px;
+}
+/* End TBD Work */
+
+/* End of Work */
+
+/* Start of ContactMe */
+.ContactMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.ContactMe h2 {
+  width: 200px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-right: black solid;
+  color: var(--secondary-color);
+}
+
+.ContactMe h2 span {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.ContactMe-Info {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-content: center;
+}
+
+.ContactMe ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.ContactMe ul li {
+  margin: 7px;
+}
+
+.ContactMe ul li a {
+  color: var(--secondary-color);
+  padding: 10px 5px;
+  font-weight: lighter;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: var(--primary-color);
+  text-decoration-thickness: 2px;
+}
+
+/* MEDIA QUERY - 1600px */
+/* @media screen and (max-width:1600px) {
+  .Work h2 {
+    margin-left: 6.5%;
+  }
+}
+/* MEDIA QUERY - 1600px */
+@media screen and (max-width:1275px) {
+
+  .AboutMe h2 {
+    width: auto;
+    margin-left: 40px;
+  }
+  .Work h2 {
+    width: auto;
+  }
+
+}
+/* MEDIA QUERY - 1180px */
+@media screen and (max-width:1275px) {
+  .Work h2 {
+    margin-left: 6.5%;
+  }
+} 
+
+/* MEDIA QUERY - 980px */
+@media screen and (max-width: 980px) {
+  .header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+
+  header h1 {
+    width: 100%vw;
+  }
+
+  .AboutMe p {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+  }
+
+  #HoriseonImage {
+    width: 400px;
+  }
+
+  #SarterImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+  #RunBuddyImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+  #InventoryModuleImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+  #TBDImage {
+    width: 200px;
+    /* margin-bottom: -10px; */
+  }
+
+  footer {
+    padding-left: 20px;
+  }
+
+  .WorkLinks-Desc {
+    margin-bottom: 5px;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+  
+  #HoriseonImage {
+    width: 300px;
+  }
+
+  #SarterImage {
+    width: 150px;
+  }
+  #RunBuddyImage {
+    width: 150px;
+  }
+  #InventoryModuleImage {
+    width: 150px;
+  }
+  #TBDImage {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width:575px){
+
+  #HoriseonImage {
+    width: 200px;
+  }
+
+  #SarterImage {
+    width: 100px;
+  }
+  #RunBuddyImage {
+    width: 100px;
+  }
+  #InventoryModuleImage {
+    width: 100px;
+  }
+  #TBDImage {
+    width: 100px;
+  }
+
+  .WorkLinks-Desc-Container{
+    width: 100px;
+  }
+}
